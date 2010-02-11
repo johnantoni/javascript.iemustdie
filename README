@@ -1,0 +1,35 @@
+ie6 does not support:
+
+multiple class declarations attached to an element, e.g.
+	li.expandable.open
+	... can only do one => li.expandable
+
+psuedo hover applied to li:
+	li:hover
+
+
+
+also note:
+
+firefox 3.0 does not support pseudo li:first-child / li:last-child declarations (FF 3.5+ does)
+
+
+
+you can try attaching HTC files to elements to give the behavior but it is problematic
+
+... see \htc floder
+
+body { behavior: url(myhack.htc); }
+
+
+
+
+
+IE conditionals..
+
+
+<!--[if IE]> .. <![endif]-->
+
+<!--[if IE 6]> .. <![endif]-->
+
+<!--[if IE 7]> .. <![endif]-->
